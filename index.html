@@ -10,14 +10,15 @@
     <body>
         <script>
   function keydownFunction() {
-    // When a key is pressed, input background turns yellow
-    document.getElementById("name").style.backgroundColor = "yellow";
+  
+    document.body.style.backgroundColor = "yellow";
   }
 
   function keyupFunction() {
-    // When a key is released, input background turns lightblue
-    document.getElementById("name").style.backgroundColor = "lightblue";
+   
+    document.body.style.backgroundColor = "lightblue";
   }
+
 </script>
         <div class="center-icon">
   <a href="https://github.com/bat-erdene25">
@@ -37,8 +38,9 @@
         <a href="https://github.com/bat-erdene25">
             <img src="github_icon.png">
         </a>
-        <p>Enter your name:</p>
+       <p>Enter your name:</p>
 <input type="text" id="name" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
         <h1 onmouseover="style.color='orange'; style.backgroundColor='lightgreen'"
     onmouseout="style.color='red'; style.backgroundColor=''">
   Courses that I am taking
@@ -105,5 +107,6 @@
 
     </body>
 </html>
+
 
 
