@@ -8,6 +8,17 @@
         <title>My Web Page</title>
     </head>
     <body>
+        <script>
+  function keydownFunction() {
+    // When a key is pressed, input background turns yellow
+    document.getElementById("name").style.backgroundColor = "yellow";
+  }
+
+  function keyupFunction() {
+    // When a key is released, input background turns lightblue
+    document.getElementById("name").style.backgroundColor = "lightblue";
+  }
+</script>
         <div class="center-icon">
   <a href="https://github.com/bat-erdene25">
     <img src="github_icon.png" alt="GitHub Icon">
@@ -26,6 +37,8 @@
         <a href="https://github.com/bat-erdene25">
             <img src="github_icon.png">
         </a>
+        <p>Enter your name:</p>
+<input type="text" id="name" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
         <h4>Courses that I am taking</h4>
             <ol>
   <li><strong>BBF101E - Introduction to Information Systems</strong></li>
@@ -83,3 +96,4 @@
 
     </body>
 </html>
+
