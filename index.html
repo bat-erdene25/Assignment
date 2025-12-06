@@ -8,9 +8,17 @@
         <title>My Web Page</title>
     </head>
     <body>
+        <button id="colorButton">Change Colors!</button>
         <script>
   function keydownFunction() {document.body.style.backgroundColor = "yellow";}
   function keyupFunction() {document.body.style.backgroundColor = "lightblue";}
+            const button = document.getElementById("colorButton");
+  const colors = ["red", "blue", "green", "gray"];
+  let index = 0;
+
+  button.addEventListener("click", () => {
+    button.style.backgroundColor = colors[index];
+    index = (index + 1) % colors.length;
 </script>
         <div class="center-icon">
   <a href="https://github.com/bat-erdene25">
@@ -92,6 +100,7 @@
 
     </body>
 </html>
+
 
 
 
